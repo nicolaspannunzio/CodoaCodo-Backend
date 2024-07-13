@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+img, picture {
+    width: 100%;
+    display: block
+}
+
+.logo {
+    width: 95%;
+    max-width: 10rem;
+    margin: 0 auto
+    }
+
+.navbar-person {
+    background-color: #51696c;
+}
+    
+.navbar-person .nav-link {
+    color: #FFFFFF;
+}
+
+.main{
+    height: 220 vh;
+    margin-top: 180px;
+}
+
+h1{
+    color: rgb(40, 15, 185);
+    text-align: center;
+    margin-bottom: 35px;
+}
+.float{
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+.float:hover{
+    box-shadow: 0 8px 8px 0 #0faec7,0 8px 8px 0 #11ea9a;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.teaminmob{
+    display: flex;
+    height: 300px;
+    padding-right: 40px;
+}
+
+.footer {
+    padding: 2.5rem 0;
+    background-color: #333;
+    margin-bottom: 0
+}
+
+.footer .contenedor-footer {
+    padding-top: 0.5rem
+}
+
+.footer .navegacion {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    padding-left: 55px;
+}
+
+.footer .copyright {
+    color: #fff;
+    text-align: center
+}
+
+.roll-in-left {
+	-webkit-animation: roll-in-left 1s ease-out both;
+	        animation: roll-in-left 1s ease-out both;
+}
+
+@-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+
+.roll-in-right {
+	-webkit-animation: roll-in-right 0.6s ease-out both;
+	        animation: roll-in-right 0.6s ease-out both;
+}
+
+@-webkit-keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+              transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+              transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  /* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar-nav li {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .main {
+        margin-top: 80px; /* Ajustar el margen superior */
+        padding: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .teaminmob, .imgservios {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer .navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .navegacion a {
+        margin-bottom: 10px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    .float:hover {
+        box-shadow: none;
+        transform: none;
+    }
+}

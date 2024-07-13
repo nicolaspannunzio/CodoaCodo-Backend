@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="../assets/img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+
+                <div class="mobile-menu">
+                    <img src="..build/img/barras.svg" alt="icono menu">
+                </div>
+
+                <div class="derecha">
+                    <nav class="navegacion">
+                        <a href="../index.html">Inicio</a>
+                        <a href="../pages/alquileres.html">Alquileres</a>
+                        <a href="../pages/ventas.html">Ventas</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+            <!--.barra-->
+        </div>
+    </header>
+
+    <div class="contact_form">
+        <div>
+            <h1>Formulario de contacto</h1>
+            <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+        </div>
+        <br>
+        <form id="crearUsuarioForm" enctype="multipart/form-data">
+            <label for="nombre"> Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="apellido"> Apellido: </label>
+            <input type="text" id="apellido" name="apellido" required>
+    
+            <label for="dni"> DNI: </label>
+            <input type="text" id="dni" name="dni">
+    
+            <label for="mail"> Mail: </label>
+            <input type="email" id="mail" name="mail" required>
+    
+            <label for="telefono"> Telefono: </label>
+            <input type="tel" id="telefono" name="telefono">
+    
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms"> Acepto los términos y condiciones
+                </label>
+                <div class="error" id="termsError">Debe aceptar los términos y condiciones.</div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!--FORM PARA EDITAR USUARIOS-->
+        <form id="editarUsuarioForm" class="hidden" enctype="multipart/form-data">
+            <h2>Editar Usuario</h2>
+            <input type="hidden" id="editID" name="editID">
+
+            <label for="editNombre">Nombre: </label>
+            <input type="text" id="editNombre" name="editNombre" required>
+
+            
+            <label for="editApellido">Apellido: </label>
+            <input type="text" id="editApellido" name="editApellido" required>
+
+            <label for="editDni">DNI: </label>
+            <input type="text" id="editDni" name="editDni" required>
+
+            <label for="editTelefono">Telefono: </label>
+            <input type="tel" id="editTelefono" name="editTelefono" required>
+
+            <label for="editMail">Mail: </label>
+            <input type="email" id="editMail" name="editMail" required>
+
+            
+            <button type="submit"> Actualizar Usuario</button>
+
+        </form>
+
+
+        <h2>Lista de Usuarios</h2>
+        <button id="listarUsuariosBtn"> Listar Todos Los usuarios</button>
+        <ul id="listaUsuarios">
+
+        </ul>
+
+
+        </div>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="../index.html">Inicio</a>
+                <a href="../pages/alquileres.html">Alquileres</a>
+                <a href="../pages/ventas.html">Ventas</a>
+                <a href="../pages/contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+        <p class="copyright">Todos los derechos Reservados 2024 &copy;</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    
+</body>
+
+</html>

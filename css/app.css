@@ -1,0 +1,300 @@
+@import"https://fonts.googleapis.com/css?family=Lato:300,400,700,900";
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+
+a {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+img {
+    border-style: none
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8
+}
+
+p {
+    color: #000;
+    font-size: 2rem
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto
+}
+
+a {
+    text-decoration: none
+}
+
+img,
+picture {
+    width: 100%;
+    display: block
+}
+
+h2,
+h3 {
+    font-family: "Lato", sans-serif;
+    margin: 2.5rem 0;
+    font-weight: 300;
+    text-align: center
+}
+
+h2 {
+    font-size: 3.4rem
+}
+
+h3 {
+    font-size: 3rem
+}
+
+h4 {
+    font-size: 2.6rem
+}
+
+.boton {
+    background-color: #e08709;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    display: block;
+    border: none
+}
+
+.boton:hover {
+    background-color: #c77808;
+    cursor: pointer
+}
+
+.header {
+    background-color: #333;
+    padding: 1rem 0 3rem 0
+}
+
+@media(min-width: 768px) {
+    .header.contenido-header {
+        min-height: 70rem
+    }
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.contenido-header h1 {
+    text-align: left;
+    color: #fff;
+    font-weight: 700;
+    line-height: 2;
+    max-width: 60rem
+}
+
+.footer {
+    padding: 2.5rem 0;
+    background-color: #333;
+    margin-bottom: 0
+}
+
+.footer .contenedor-footer {
+    padding-top: 2.5rem
+}
+
+.footer .navegacion {
+    visibility: visible;
+    opacity: 1;
+    height: auto
+}
+
+.footer .copyright {
+    color: #fff;
+    text-align: center
+}
+
+.derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+@media(min-width: 768px) {
+    .derecha {
+        align-items: flex-end
+    }
+}
+
+.derecha {
+    width: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    filter: invert(100%)
+}
+
+.derecha {
+    cursor: pointer
+}
+
+@media(min-width: 768px) {
+    .derecha {
+        margin-top: 0
+    }
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem
+}
+
+.barra img {
+    width: 30rem
+}
+
+@media(min-width: 768px) {
+    .barra {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end
+    }
+}
+
+.navegacion {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear
+}
+
+@media(min-width: 768px) {
+    .navegacion {
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        visibility: visible
+    }
+}
+
+.navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+    text-align: center
+}
+
+@media(min-width: 768px) {
+    .navegacion a {
+        margin-right: 2rem;
+        font-size: 1.8rem
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0
+    }
+}
+
+.navegacion a:hover {
+    color: #71b100
+}
+
+@media(min-width: 768px) {
+    .mobile-menu {
+        display: none
+    }
+}
+
+.mobile-menu img {
+    width: 5rem
+}
+
+.icono {
+    text-align: center
+}
+
+.icono img {
+    height: 10rem
+}
+
+.icono h3 {
+    text-transform: uppercase
+}
+
+@media(min-width: 768px) {
+    .contenedor-anuncios {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+.anuncio {
+    background-color: #eee;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 2rem
+}
+
+.anuncio .contenido-anuncio {
+    padding: 2rem
+}
+
+.anuncio h3,
+.anuncio p {
+    margin: 0
+}
+
+.precio {
+    color: #71b100;
+    font-weight: 700;
+    font-size: 3rem
+}
+
+.iconos-caracteristicas {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width: 40rem
+}
+
+.iconos-caracteristicas li {
+    flex: 1;
+    display: flex
+}
+
+.iconos-caracteristicas li img {
+    flex: 0 0 3rem;
+    margin-right: 1rem
+}
+
+.iconos-caracteristicas li p {
+    font-weight: 900
+}

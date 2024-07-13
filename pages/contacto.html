@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="../css/contacto.css/app.css">
+    <link rel="stylesheet" href="../css/contacto.css/form.css">
+    <script src="../scripts/validacionform.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="../assets/img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+
+                <div class="mobile-menu">
+                    <img src="..build/img/barras.svg" alt="icono menu">
+                </div>
+
+                <div class="derecha">
+                    <nav class="navegacion">
+                        <a href="../index.html">Inicio</a>
+                        <a href="../pages/alquileres.html">Alquileres</a>
+                        <a href="../pages/ventas.html">Ventas</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+            <!--.barra-->
+        </div>
+    </header>
+
+    <div class="contact_form">
+        <div>
+            <h1>Formulario de contacto</h1>
+            <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+        </div>
+        <br>
+        <form id="formulario"  onsubmit="return validacionForm()">
+            <div>
+                <label for="nombre" class="nombre" required>Nombre
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="text" id="nombre" name="nombre"  placeholder="Escribe tu nombre">
+                <div class="error" id="nombreError">Este campo es obligatorio.</div>
+            </div>
+            <div>
+                <label for="apellido" class="apellido">Apellido
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="text" id="apellido" name="apellido"  placeholder="Escribe tu Apellido">
+                <div class="error" id="apellidoError">Este campo es obligatorio.</div>
+            </div>
+            <div>
+                <label for="email">Email
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu Email">
+                <div class="error" id="emailError">Este campo es obligatorio.</div>
+            </div>
+            <div>
+                <label for="telefono">Teléfono
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+                <div class="error" id="errorTelefono">Este campo es obligatorio.</div>
+
+            </div>
+            <div>
+                <label for="tipoPropiedad">Tipo de Propiedad 
+                    <span class="obligatorio">*</span>
+                </label>
+                <select id="tipoPropiedad" name="tipoPropiedad" >
+                    <option value="">Seleccione un tipo</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Departamento</option>
+                </select>
+                <div class="error" id="errorTipoPropiedad">Este campo es obligatorio.</div>
+
+            </div>
+            <div>
+                <label for="mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                </label>
+                <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu mensaje o consulta"></textarea>
+                <div class="error" id="errorMensaje">Este campo es obligatorio.</div>
+            </div>
+            <div>
+                <label for="imagen">Elige una imagen para subir
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+                <div class="error" id="imagenError">Debe seleccionar una imagen.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms"> Acepto los términos y condiciones
+                </label>
+                <div class="error" id="termsError">Debe aceptar los términos y condiciones.</div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="../index.html">Inicio</a>
+                <a href="../pages/alquileres.html">Alquileres</a>
+                <a href="../pages/ventas.html">Ventas</a>
+                <a href="../pages/contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+        <p class="copyright">Todos los derechos Reservados 2024 &copy;</p>
+    </footer>
+    
+</body>
+
+</html>

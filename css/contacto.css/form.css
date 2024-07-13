@@ -1,0 +1,107 @@
+.contact_form{  
+    width: 455px; 
+    height: auto;
+    margin: 60px auto;
+    border-radius: 10px;  
+    padding-top: 15px;
+    padding-bottom: 20px;  
+    background-color: #E5E8E8; 
+    padding-left: 15px; 
+  }
+  
+  h1{
+    text-align: center;
+    font-weight: 600;
+    color: #0c0c0c;
+  }
+
+  h3 {
+    margin-bottom: var(--space-24px);
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--font-18px);
+    color: var(--color-grey-nero);
+  }
+  
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #85929E ; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #85929E; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+
+
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #0c0c0c; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+    color: #fff; 
+
+  }
+
+  #tipoPropiedad{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #85929E ; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+
+  }
+
+
+.form-group input[type="checkbox"] {
+            width: auto;
+            height: auto;
+            
+        }
+   
+
+
+ span {
+    color: rgb(255, 0, 0);
+}
+
+.error {
+    color: red;
+    display: none;
+}
