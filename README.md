@@ -1,13 +1,31 @@
-<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Codo_a_Codo_2024_0"></a>Codo a Codo 2024</h1>
-<p class="has-line-data" data-line-start="2" data-line-end="3">** Proyecto Integrador. Front-End **</p>
-<p class="has-line-data" data-line-start="4" data-line-end="5">Este proyecto consta de un conjunto de cuatro páginas HTML interconectadas, enfocadas en el sector inmobiliario. Las páginas incluyen:</p>
-<p class="has-line-data" data-line-start="6" data-line-end="11">Inicio: Página principal con información general.<br>
-Ventas: Listado de propiedades en venta.<br>
-Alquileres: Listado de propiedades en alquiler.<br>
-Contacto: Formulario para consultas y solicitudes.<br>
-El desarrollo utiliza HTML, CSS y JavaScript para una experiencia web interactiva y atractiva.</p>
-<p class="has-line-data" data-line-start="12" data-line-end="17">Colaboradores. Contacto<br>
-Alfredo Poblete - <a href="mailto:dolfito2002@gmail.com">dolfito2002@gmail.com</a><br>
-Osvaldo Jose Rojas - <a href="mailto:ovirojaa@gmail.com">ovirojaa@gmail.com</a><br>
-Fabiana Carbajal <a href="mailto:-fabic33@gmail.com">-fabic33@gmail.com</a><br>
-Nicolás Pannunzio - <a href="mailto:nicolas.a.pannunzio@gmail.com">nicolas.a.pannunzio@gmail.com</a></p>
+Trabajo Final Backend Codo a Codo 2024
+Este repositorio contiene el trabajo final del curso de desarrollo backend en Codo a Codo 2024 - 1er Cuatrimestre. A continuación, describo los aspectos clave:
+
+Descripción
+Base de datos: Utilizamos MySQL y creamos una base de datos con 4 tablas, cada una con al menos 4 tipos de datos. La relación entre estas tablas es de uno a muchos.
+
+Servidor: Implementamos un servidor Node.js con Express para manejar las solicitudes HTTP.
+
+CRUD (Create, Read, Update, Delete):
+
+GET: Consulta datos desde la base de datos.
+POST: Agrega nuevos registros a la base de datos.
+PUT: Actualiza registros existentes.
+DELETE: Elimina registros.
+Despliegue: Puedes hacer un deploy en Vercel u otra plataforma de tu elección.
+
+Autenticación: Implementa un método de autenticación, como tokens JWT, para proteger las rutas y asegurar el acceso.
+
+Conexión Frontend-Backend: Asegúrate de conectar correctamente el frontend con el backend.
+
+Instalación
+Clona este repositorio.
+Instala las dependencias con npm install.
+Configura tu base de datos en el archivo .env.
+Ejecuta el servidor con npm start.
+
+Colaboradores. Contacto
+Alfredo Poblete - dolfito2002@gmail.com
+Osvaldo Jose Rojas - ovirojaa@gmail.com
+Fabiana Carbajal -fabic33@gmail.com
+Nicolás Pannunzio - nicolas.a.pannunzio@gmail.com
